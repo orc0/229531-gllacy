@@ -8,8 +8,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  	<header class="main-header">
-  		<div class="container">
+    <!-- ШАПКА ДОКУМЕНТА -->
+    <header class="main-header">
+  		<div class="container clearfix">
   			<!-- Навигационное меню -->
   			<nav class="main-navigation">
   				<a><img src="img/icon-logo.png" width="154" height="64" alt="Магазин 'Глейси'"></a>
@@ -19,36 +20,36 @@
   					<li><a href="#">О Компании</a></li>
   				</ul>
   				<!-- Блок пользователя -->
-  				<div class="user-block">
+  			</nav>	
+          <div class="user-block">
   					<a class="search" href="#">Поиск</a>
   					<a class="login" href="#">Вход</a>
   					<a class="shopping-cart" href="#">Пусто</a>
   				</div>
-  			</nav>
   		</div>
   	</header>
   	<!-- Основное содержимое документа -->
   	<main class="container">
   		<!-- Контактная информация в верхней части документа -->
-  		<section class="contacts">
+  		<section class="contacts"> <!-- подумать! может включить в блок-слайдер -->
   			С 10 до 20, ежедневно<br>
   			8 812 450-25-25
   		</section>
   		<!-- Слайдер -->
-  		<div class="slider">
+  		<div class="slider"> <!-- вставить тут распорку -->
   			<ul slider-frames>
   				<li>
   					<img src="img/index-slider-1.png" width="1045" height="881" alt="Слайд-1">
   					<span>Крем-брюле и пломбир с малиновым джемом</span>
   				</li>
-  				<li>
+<!--   				<li>
   					<img src="img/index-slider-2.png" width="1065" height="859" alt="Слайд-2">
   					<span>Шоколадный пломбир и лимонный сорбет</span>
   				</li>
   				<li>
   					<img src="img/index-slider-3.png" width="1079" height="854" alt="Слайд-3">
   					<span>Пломбир с помадкой и клубничный щербет</span>
-  				</li>
+  				</li> -->
   			</ul>
   			<!-- переключатель слайдов -->
   			<div class="slider-switcher">
@@ -61,8 +62,8 @@
 				</div>
   		</div>
   		<!-- Специальные предложения -->
-  		<section class="special-offers">
-        <div class="special-offer-item-left">
+  		<section class="special-offers clearfix">
+        <div class="special-item-left">
     			<article>
     				<img src="img/index-banner-1.png" width="560" height="229" alt="Специальное предложение!">
     				<h2>Малинка даром!</h2>
@@ -71,7 +72,7 @@
     			</article>
         </div>
   			<div>
-          <article class="special-offer-item-right">
+          <article class="special-item-right">
     				<img src="img/index-banner-2.png" width="560" height="229" alt="Специальное предложение!">
     				<h2>Шоколадки даром даром!</h2>
     				<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
@@ -80,7 +81,7 @@
         </div>  		
   		</section>
   		<!-- Хиты продаж -->
-  		<section class="best-offers">
+  		<section class="best-offers clearfix">
   			<article class="best-offer-item">
   				<img src="img/index-img-1.jpg" width="267" height="267" alt="Хит продаж">
   				<span>310&#8381;/кг</span>
@@ -103,8 +104,8 @@
   			</article>
   		</section>
   		<!-- Главная информация о магазине -->
-  		<div class="main-description">
-        <!-- <img src="img/index-img-main.jpg" width="734" height="433" alt="index-img-main.jpg"> -->
+  		<div class="main-description clearfix">
+        <!-- <img src="#" width="1146" height="306" alt="index-img-main.jpg"> -->
   			<h1 class="index-description-title">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства</h1>
   			<ul>
   				<li>
@@ -122,7 +123,7 @@
   			</ul>
   		</div>
   		<!-- Блоки новостей и рассылки -->
-  		<section class="news">
+  		<section class="news clearfix">
   			<article class="news-item-left">
           <img src="img/index-blog.png" width="560" height="220" alt="Новости блога">
   				<span>Новое в нашем блоге</span>
@@ -138,12 +139,12 @@
   			</article>
   		</section>
   		<!-- Карта местоположения и адресный блок-->
-  		<div class="map">
+  		<div class="map clearfix">
   			<img src="img/index-map.jpg" width="1200" height="430" alt="Схема проезда">
   		</div>
   		<div class="map-contacts">
-  			<img src="http://placehold.it/302x305" width="302" height="305" alt="contacts.png">
-  			<div class="contact-information">
+<!--   			<img src="http://placehold.it/302x305" width="302" height="305" alt="contacts.png"> -->
+        <div class="contact-information">
   				<p>Адрес главного офиса и офлайн магазина:</p>
   				<p><strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong></p>
   				<p>Для заказов по телефону:</p>
@@ -157,8 +158,8 @@
   	</main>
   	<!-- ПОДВАЛ -->
   	<footer class="main-footer">
-  		<div class="container">
-  			<section class="footer-social">
+  		<div class="container clearfix">
+  			<section class="footer-social"> 
   			  <a class="social-btn" href="#">Twitter</a>
   				<a class="social-btn" href="#">Instagram</a>
   				<a class="social-btn" href="#">Facebook</a>
