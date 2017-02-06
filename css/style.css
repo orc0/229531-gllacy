@@ -36,7 +36,7 @@ html, body {
 }
 
 .main-header {
-	margin-bottom: 50px; /*временное значение, пересчитать*/
+	/*margin-bottom: 50px;*/ /*временное значение, пересчитать*/
 }
 
 .main-navigation {
@@ -44,7 +44,7 @@ html, body {
 	width: 853px;
 	min-height: 71px; /*временное значение, пересчитать*/
 	/*временный фон, удалить*/
-	background-color: blue;
+	background-color: red;
 }
 
 .user-block {
@@ -52,7 +52,7 @@ html, body {
 	width: 267px;
 	min-height: 71px; /*временное значение, пересчитать*/
 	/*временный фон, удалить*/
-	background-color: yellow;
+	background-color: red;
 }
 
 .slider {
@@ -82,15 +82,13 @@ html, body {
 
 }
 .best-offers {
-	font-size: 0px; /*"убиваем" размер шрифта для корректных inline-block*/
 	margin-bottom: 40px;
 }
 
 .best-offer-item {
-	display: inline-block;
+	float: left;
 	width: 267px;
 	vertical-align: top;
-	font-size: 16px; /*восстанавливаем размер шрифта для inline-block*/
 	margin-right: 26px;
 }
 
@@ -137,19 +135,19 @@ html, body {
 .footer-social {
 	float: left;
 	width: 267px;
-	background-color: blue; /*временно*/
+	background-color: red; /*временно*/
 }
 
 .footer-about {
 	float: left;
 	width: 560px;
-	background-color: blue; /*временно*/
+	background-color: red; /*временно*/
 }
 
 .footer-copyright {
 	float: right;
 	width: 267px;
-	background-color: blue; /*временно*/
+	background-color: red; /*временно*/
 }
 
 /*= ТИПОГРАФИКА =*/
@@ -164,6 +162,58 @@ html, body {
 	line-height: 41px;
 	font-weight: 700;		
 }
+
+ /*--- CATALOG.HTML ---*/ 
+
+.breadcrumbs {
+	float: left;
+	width: 267px;
+	margin-top: 2px;
+	background-color: blue; /*временно*/
+}
+
+.contacts {
+	float: right;
+	width: 267px;
+	margin-top: 2px;
+	background-color: blue; /*временно*/
+}
+
+.catalog-form-section {
+	float: left;
+	width: 1146px;
+	margin-top: 5px;
+	min-height: 200; /*пересчитать*/
+	background-color: orange; /*временно*/
+}
+
+.catalog-offers {
+	font-size: 0px; /*"убиваем" размер шрифта для корректных inline-block*/
+}
+
+.offer-item {
+	/*display: inline-block;*/
+	float: left;
+	width: 267px;
+	vertical-align: top;
+	font-size: 16px; /*восстанавливаем размер шрифта для inline-block*/
+	margin-right: 26px;
+}
+
+.offer-item:nth-child(4) {
+	margin-right: 0px;
+}
+.offer-item:nth-child(8) {
+	margin-right: 0px;
+}
+.offer-item:nth-child(12) {
+	margin-right: 0px;
+}
+ /*--- CATALOG.HTML (END) ---*/
+
+
+
+
 /*= ОФОРМЛЕНИЕ =*/
 /*= АНИМАЦИЯ =*/
 /*= РАЗНОЕ =*/
