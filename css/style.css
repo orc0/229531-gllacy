@@ -42,12 +42,25 @@ html, body {
 	/*margin-bottom: 50px;*/ /*временное значение, пересчитать*/
 }
 
+.main-logo {
+	float: left;
+}
+
 .main-navigation {
 	float: left;
 	width: 853px;
 	min-height: 71px; /*временное значение, пересчитать*/
 	/*временный фон, удалить*/
 	background-color: red;
+}
+
+.main-menu {
+	padding: 0;
+}
+
+.main-navigation li {
+	display: inline-block;
+	vertical-align: top;
 }
 
 .user-block {
@@ -184,14 +197,14 @@ html, body {
 	float: right;
 	width: 267px;
 	margin-top: 2px;
-	background-color: blue; /*временно*/
+	background-color: yellow; /*временно*/
 }
 
 .catalog-form-section {
 	float: left;
 	width: 1146px;
 	margin-top: 5px;
-	min-height: 200; /*пересчитать*/
+	min-height: 200px; /*пересчитать*/
 	background-color: orange; /*временно*/
 }
 
@@ -208,15 +221,39 @@ html, body {
 	margin-right: 26px;
 }
 
-.offer-item:nth-child(4) {
+.offer-item:nth-child(4n) {
 	margin-right: 0px;
 }
-.offer-item:nth-child(8) {
-	margin-right: 0px;
+
+.form-item {
+	float: left;
+	width: 193px;
+	margin-right: 16px;
 }
-.offer-item:nth-child(12) {
-	margin-right: 0px;
+
+.form-item:nth-child(2) {
+	float: left;
+	width: 218px;
+	margin-right: 14px;
 }
+
+.form-item:nth-child(3) {
+	float: left;
+	width: 437px;
+	margin-right: 267px;
+}
+
+.form-item:nth-child(4) {
+	float: left;
+	width: 702px;
+	margin-right: 14px;
+}
+
+.form-item:nth-child(5) {
+	float: left;
+	width: 163px;
+}
+
  /*--- CATALOG.HTML (END) ---*/
 
 

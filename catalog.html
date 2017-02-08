@@ -14,7 +14,9 @@
     		<div class="container clearfix">
     			<!-- Навигационное меню -->
     			<nav class="main-navigation">
-    				<a href="index.html"><img src="img/icon-logo.png" width="154" height="64" alt="Магазин 'Глейси'"></a>
+    				<div class="main-logo">
+                        <a href="index.html"><img src="img/icon-logo.png" width="154" height="64" alt="Магазин 'Глейси'"></a>
+                    </div>
     				<ul class="main-menu">
     					<li><a href="#">Каталог</a></li>
     					<li><a href="#">Доставка и оплата</a></li>
@@ -46,58 +48,68 @@
     		<div class="catalog-form-section clearfix">
           <h1 class="catalog-title">Сливочное мороженое</h1>
     			<form class="#" action="#" method="#">
-    				<label>
-    					Сортировка:<br>
-    					<select name="sorting">
-    					<option value="popularity">по популярности</option>
-    					</select>
-    				</label>
-    				<label>	<!-- !!! ???? !!! -->
-    					Цена: 100 руб. - 500 руб.<br>
-    					<input type="range" min="1" max="1000"> <!-- решить какие варианты ползунка использовать -->
-    				</label>
-    				<span>Жирность:</span><br> <!-- подумать, как привести к единообразию разметки подписей для элементов формы -->
-    				<ul class="fatness-filter">
-    					<li>
-    						<label for="fatness-1">0%</label>
-    						<input type="radio" id="fatness-1" name="fatness-value" value="fatness-1">
-  						</li>
-    					<li>
-    						<label for="fatness-2">до 10%</label>
-    						<input type="radio" id="fatness-1" name="fatness-value" value="fatness-2" checked>
-  						</li>
-    					<li>
-    						<label for="fatness-3">до 30%</label>
-    						<input type="radio" id="fatness-1" name="fatness-value" value="fatness-3">
-  						</li>
-    					<li>
-    						<label for="fatness-4">выше 30%</label>
-    						<input type="radio" id="fatness-1" name="fatness-value" value="fatness-4">
-  						</li>
-    				</ul>
-    				<ul class="filler-filter">
-    					<li>
-    						<input type="checkbox" id="chocolate" name="fillers" value="chocolate" checked>
-    						<label for="chocolate">шоколадные</label>
-    					</li>
-    					<li>
-    						<input type="checkbox" id="sugar" name="fillers" value="sugar" checked>
-    						<label for="sugar">сахарные присыпки</label>
-    					</li>
-    					<li>
-    						<input type="checkbox" id="fruit" name="fillers" value="fruit">
-    						<label for="fruit">фрукты</label>
-    					</li>
-    					<li>
-    						<input type="checkbox" id="syrup" name="fillers" value="syrup">
-    						<label for="syrup">сиропы</label>
-    					</li>
-    					<li>
-    						<input type="checkbox" id="jam" name="fillers" value="jam">
-    						<label for="jam">джемы</label>
-    					</li>
-    				</ul>
-    				<input type="submit" class="filter-btn" value="Применить">	
+    				<div class="form-item">
+                        <label>
+        					Сортировка:<br>
+        					<select name="sorting">
+        					<option value="popularity">по популярности</option>
+        					</select>
+        				</label>
+                    </div>
+    				<div class="form-item">
+                        <label>
+        					Цена: 100 руб. - 500 руб.<br>
+        					<input type="range" min="1" max="1000"> <!-- решить какие варианты ползунка использовать -->
+        				</label>
+                    </div>
+                    <div class="form-item">
+        				<span>Жирность:</span><br>
+        				<ul class="fatness-filter">
+        					<li>
+        						<label for="fatness-1">0%</label>
+        						<input type="radio" id="fatness-1" name="fatness-value" value="fatness-1">
+      						</li>
+        					<li>
+        						<label for="fatness-2">до 10%</label>
+        						<input type="radio" id="fatness-1" name="fatness-value" value="fatness-2" checked>
+      						</li>
+        					<li>
+        						<label for="fatness-3">до 30%</label>
+        						<input type="radio" id="fatness-1" name="fatness-value" value="fatness-3">
+      						</li>
+        					<li>
+        						<label for="fatness-4">выше 30%</label>
+        						<input type="radio" id="fatness-1" name="fatness-value" value="fatness-4">
+      						</li>
+        				</ul>
+                    </div>
+    				<div class="form-item">
+                        <ul class="filler-filter">
+        					<li>
+        						<input type="checkbox" id="chocolate" name="fillers" value="chocolate" checked>
+        						<label for="chocolate">шоколадные</label>
+        					</li>
+        					<li>
+        						<input type="checkbox" id="sugar" name="fillers" value="sugar" checked>
+        						<label for="sugar">сахарные присыпки</label>
+        					</li>
+        					<li>
+        						<input type="checkbox" id="fruit" name="fillers" value="fruit">
+        						<label for="fruit">фрукты</label>
+        					</li>
+        					<li>
+        						<input type="checkbox" id="syrup" name="fillers" value="syrup">
+        						<label for="syrup">сиропы</label>
+        					</li>
+        					<li>
+        						<input type="checkbox" id="jam" name="fillers" value="jam">
+        						<label for="jam">джемы</label>
+        					</li>
+        				</ul>
+                    </div>
+                    <div class="form-item">
+    				    <input type="submit" class="filter-btn" value="Применить">
+                    </div>	
     			</form>
     		</div>
     		<!-- Список (блок) товаров -->
