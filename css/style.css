@@ -16,15 +16,20 @@ html, body {
 
 /*= ПОЗИЦИОНИРОВАНИЕ =*/
 /*= БЛОЧНАЯ МОДЕЛЬ =*/
+/*= ТИПОГРАФИКА =*/
+/*= ОФОРМЛЕНИЕ =*/
+/*= АНИМАЦИЯ =*/
+/*= РАЗНОЕ =*/
+
 .clearfix::after {
 	content: "";
 	display: table;
 	clear: both;
 
-	height: 20px;
+/*	height: 120px;
   background-color: white;
   background-image: linear-gradient(-45deg, white 45%, black 50%, white 55%);
-  background-size: 20px;
+  background-size: 20px;*/
 }
 
 .main-container {
@@ -34,41 +39,145 @@ html, body {
 
 .container {
 	padding: 0 27px;
-	/*временный фон, удалить*/
-	background-color: green;
+	background-color: #96ab9f;
 }
 
 .main-header {
+/*	min-height: 114px;
+	background-color: purple;*/
 	/*margin-bottom: 50px;*/ /*временное значение, пересчитать*/
+}
+
+.main-navigation {
+	max-width: 853px;
+	background-color: lightblue; /*удалить*/
 }
 
 .main-logo {
 	float: left;
+	width: 154px;
+	margin-top: 9px;
 }
 
-.main-navigation {
+.main-menu {
 	float: left;
-	width: 853px;
-	min-height: 71px; /*временное значение, пересчитать*/
-	/*временный фон, удалить*/
-	background-color: red;
+	width: 687px;
+	margin-left: 12px;
+	margin-top: 24px;
+	background-color: rgba(255, 0, 0, 0.5); /*удалить*/
+}
+
+.main-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+.main-menu li {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	vertical-align: top;
+}
+
+.main-menu a {
+	display: block;
+	padding: 6px 12px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.main-menu a:hover {
+	color: #333333;
+	background: #f7f6f3; /*временно*/
 }
 
 .main-menu {
 	padding: 0;
 }
 
-.main-navigation li {
-	display: inline-block;
-	vertical-align: top;
-}
-
 .user-block {
 	float: right;
 	width: 267px;
-	min-height: 71px; /*временное значение, пересчитать*/
-	/*временный фон, удалить*/
-	background-color: red;
+	height: 32px;
+	font-size: 0;
+	margin-top: 24px;
+	background-color: rgba(255, 0, 0, 0.5); /*удалить*/
+}
+
+.user-block-item:nth-child(1) {
+	display: inline-block;
+	width: 33px;
+	margin-right: 10px;
+	margin-left: 5px;
+	vertical-align: top;
+}
+
+.user-block-item:nth-child(2) {
+	display: inline-block;
+	width: 92px;
+	margin-right: 10px;
+	vertical-align: top;
+}
+
+.user-block-item:nth-child(3) {
+	display: inline-block;
+	width: 117px;
+	margin-right: 0;
+	vertical-align: top;
+}
+
+.user-block-item:nth-child(2) a {
+	padding-left: 44px;
+	padding-right: 16px;
+}
+
+.user-block-item:nth-child(3) a {
+	padding-left: 45px;
+	padding-right: 34px;
+}
+
+.user-block a {
+	display: inline-block;
+	padding-top: 9px;
+	padding-bottom: 8px;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+	text-decoration: none;
+	vertical-align: top;
+}
+
+.user-block a:hover {
+	color: #333333;
+	background: #f7f6f3; /*временно*/
+}
+
+.header-contacts {
+	float: right;
+	width: 167px;
+	margin-top: 19px;
+	padding: 0;
+	background-color: rgba(255, 0, 0, 0.5); /*временно*/
+}
+
+.header-contacts p {
+	margin: 0;
+	margin-bottom: 6px;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 700;
+	text-align: right;
+}
+
+.header-contacts span {
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: 700;
+	text-align: right;
 }
 
 .slider {
@@ -171,7 +280,7 @@ html, body {
 	background-color: red; /*временно*/
 }
 
-/*= ТИПОГРАФИКА =*/
+
 .index-description-title {
 	font-size: 24px;
 	line-height: 30px;
@@ -193,12 +302,6 @@ html, body {
 	background-color: blue; /*временно*/
 }
 
-.contacts {
-	float: right;
-	width: 267px;
-	margin-top: 2px;
-	background-color: yellow; /*временно*/
-}
 
 .catalog-form-section {
 	float: left;
@@ -259,6 +362,4 @@ html, body {
 
 
 
-/*= ОФОРМЛЕНИЕ =*/
-/*= АНИМАЦИЯ =*/
-/*= РАЗНОЕ =*/
+
