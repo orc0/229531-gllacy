@@ -4,14 +4,18 @@ body {
 	color: #ffffff;
 	font-weight: 400;
 	font-family: "Roboto", "Arial", sans-serif;
-	background-color: #849d8f;/*временный фон*/
+	background-color: #849d8f;
 }
 
-html, body {
-/*возможно этот блок потом заменить на контейнер*/
+/*html, body {
+
   min-width: 1220px;
 	margin: 0px;
 	padding: 0px;
+}*/
+
+body > input[type="radio"] {
+	display: none;
 }
 
 /*= ПОЗИЦИОНИРОВАНИЕ =*/
@@ -35,11 +39,19 @@ html, body {
 .main-container {
 	width: 1200px;
 	margin: 0 auto;
+	
+	/*слайдер*/
+/*	background-color: #96ab9f;
+	background-image: url("../img/index-slider-1.png");*/
+	background-repeat: no-repeat;
+	background-position: top center;
+	/*слайдер end*/	
 }
 
 .container {
+	max-width: 1146px;
+	margin: 0 auto;
 	padding: 0 27px;
-	background-color: #96ab9f;
 }
 
 .main-header {
@@ -91,6 +103,7 @@ html, body {
 
 .main-menu a:hover {
 	color: #333333;
+	border-radius: 10px; /*!!!пересчитать значение!!!*/
 	background: #f7f6f3; /*временно*/
 }
 
@@ -181,11 +194,102 @@ html, body {
 }
 
 .slider {
-	/*?????*/
-		float: left;
-		min-height: 575; /*временно*/
-		margin-bottom: 40px; /*временно*/
-		background-color: blue; /*временно*/
+	position: relative;
+	padding-top: 270px;
+	margin-bottom: 41px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.slide {
+	display: none;
+}
+
+.slide-title {
+	width: 700px; /*проверить!*/
+	margin: 0 auto;
+	margin-bottom: 30px;
+	font-size: 60px;
+	line-height: 60px;
+
+	font-weight: 700;
+}
+
+.slide-btn {
+	display: inline-block;
+	/* возможно паддинги привести к единому значению*/
+	padding-top: 11px;
+	padding-bottom: 10px;
+	padding-left: 41px;
+	padding-right: 43px;
+
+	font-size: 32px;
+	line-height: 44px;
+	font-weight: 700;
+	vertical-align: top;
+	color: #ffffff;
+	text-decoration: none;
+	/*добавить тень текста*/
+	background: #f26843;
+	/*добавить градиент*/
+
+	border-radius: 100px;
+	/*добавить тень контейнера*/
+}
+
+.slide-btn:hover {
+	/*наведение*/
+}
+
+.slide-btn:active {
+	/*нажатие*/
+}
+/*перепозиционировать!!!!!!!!!!!*/
+.slider-controls { 
+	position: absolute;
+	bottom: 25px;
+	left: 0;
+	z-index: 20;
+	font-size: 0;
+}
+
+.slider-controls label {
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	margin-right: 8px;
+	vertical-align: top;
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#btn-1:checked ~ .main-container #slide-1,
+#btn-2:checked ~ .main-container #slide-2,
+#btn-3:checked ~ .main-container #slide-3 {
+	display: block;
+}
+
+#btn-1:checked ~ .main-container {
+	background-color: #849d8f;
+	background-image: url("../img/index-slider-1.png");
+}
+
+#btn-2:checked ~ .main-container {
+	background-color: #8996a6;
+	background-image: url("../img/index-slider-2.png");
+}
+
+#btn-3:checked ~ .main-container {
+	background-color: #9d8b84;
+	background-image: url("../img/index-slider-3.png");
+}
+
+#btn-1:checked ~ .main-container label[for="btn-1"],
+#btn-2:checked ~ .main-container label[for="btn-2"],
+#btn-3:checked ~ .main-container label[for="btn-3"] {
+	background-color: #ffffff;
 }
 
 .special-offers {
@@ -523,7 +627,6 @@ html, body {
 .catalog-form-section {
 	float: left;
 	width: 1146px;
-	margin-top: 5px;
 	min-height: 200px; /*пересчитать*/
 	background-color: orange; /*временно*/
 }
