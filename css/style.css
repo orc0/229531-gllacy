@@ -184,6 +184,7 @@ html, body {
 	/*?????*/
 		float: left;
 		min-height: 575; /*временно*/
+		margin-bottom: 40px; /*временно*/
 		background-color: blue; /*временно*/
 }
 
@@ -194,84 +195,276 @@ html, body {
 .special-item-left {
 	float: left;
 	width: 560px;
-	min-height: 229; /*временно*/
+	height: 229px;
+	background: url("../img/index-banner-1.png") no-repeat;
 	background-color: blue; /*временно*/
-
 }
 
 .special-item-right {
 	float: right;
 	width: 560px;
-	min-height: 229; /*временно*/
+	height: 229px;
+	background: url("../img/index-banner-2.png") no-repeat;
 	background-color: blue; /*временно*/
-
 }
+
+.special-offers h2 {
+	margin: 0 0;
+	margin-bottom: 23px;
+	padding-top: 20px;
+	padding-left: 20px;
+	color: #ffffff;
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+}
+
+.special-offers p {
+	margin: 0 0;
+	padding-left: 20px;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
+}
+
 .best-offers {
-	margin-bottom: 40px;
+	margin-bottom: 40px; /*пересчитать*/
 }
 
 .best-offer-item {
+	position: relative;
 	float: left;
 	width: 267px;
-	vertical-align: top;
+	/*vertical-align: top;*/
 	margin-right: 26px;
+	text-align: center;
 }
 
 .best-offer-item:last-child {
 	margin-right: 0px;
 }
 
+.best-offer-item img {
+	border-radius: 50%;
+	margin-bottom: 13px;
+}
+
+.item-price {
+	position: absolute;
+	top: 209px;
+	left: 0;
+	color: #ffffff;
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 700;
+}
+
+.item-link {
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	
+}
+
 .main-description {
 	float: left;
 	width: 1146px;
+	height: 306px; /*временно*/
 	margin-bottom: 40px;
-	min-height: 306px; /*временно*/
-	background-color: blue; /*временно*/
+	background-color: lightblue; /*временно*/
+}
+
+.main-description h1 {
+	margin: 0 0;
+	padding-left: 21px;
+	padding-right: 21px;
+	padding-top: 26px;
+	padding-bottom: 13px;
+	color: #000000;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;	
+}
+
+.description-block {
+	display: inline-block;
+	width: 560px;
+	vertical-align: top;
+}
+
+
+.description-block ul {
+	text-decoration: none;
+	list-style: none;
+}
+.description-block p {
+
+	color: #000000;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;		
+}
+
+.description-icon {
+/*	display: block;
+	min-width: 49px;
+	min-height: 49px;
+	background: url("../img/icon-icecream.png") no-repeat;
+	box-sizing: border-box;*/
 }
 
 .news {
 	margin-bottom: 40px;
-	min-height: 220px; /*временно*/
-	background-color: blue; /*временно*/
+	/*background-color: red;*/
 }
 
 .news-item-left {
 	float: left;
+	box-sizing: border-box;
 	width: 560px;
+	height: 220px;
+	padding: 23px 20px 0 20px;
+	background: url("../img/index-blog.png") no-repeat;
 	background-color: blue; /*временно*/
 }
 
+.news-item-left p {
+	margin: 0 0;
+	color: #000000;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;		
+}	
+
+.news-item-left a {
+	margin-top: 7px;
+	color: #000000;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;		
+}	
+
+
 .news-item-right {
 	float: right;
+	box-sizing: border-box;
 	width: 560px;
+	height: 220px;
+	padding: 34px 27px 40px 27px;
+	background: url("../img/index-subscribe.png") no-repeat;
 	background-color: blue; /*временно*/
+}
+
+.news-item-right p {
+	margin: 0;
+	color: #000000;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+}
+
+.news-item-right form {
+	width: 368px;
+	height: 44px;
+	border: 1px solid red; /*временно*/
+	margin-top: 35px;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
 }
 
 .map {
   float: left;
+ 	position: relative;
+  margin: 0;
+  padding: 0;
 	width: 1200px;
-	margin-top: 40px;
-
-	position: relative;
-  left: -27px;
+	margin-bottom: 40px;
+/*	position: relative;
+	left: -27px;
   z-index: 1;
-  width: 100%;
+  width: 100%;*/
 }
 
+.map-contacts {
+	position: absolute;
+	top: 62px;
+	left: 871px;
+	width: 302px;
+	height: 305px;
+	padding: 29px 25px 28px 16px;
+	box-sizing: border-box;
+	background-color: #ffffff;
+}
+
+.contacts-information p {
+	color: #000000;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+.contacts-information span {
+	color: #000000;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+
 .main-footer {
-	margin: 20px 0px;
+	min-height: 103px;
+	/*margin: 20px 0px;*/
 }
 
 .footer-social {
 	float: left;
 	width: 267px;
-	background-color: red; /*временно*/
+	/*margin-right: 81px;*/
+	padding-top: 18px;
+	background-color: rgba(255, 0, 0, 0.5); /*удалить*/
 }
 
+.social-btn {
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	margin-right: 11px;
+	font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+	background: #000000 url("../img/icon-instagram.png") no-repeat center; /*временно*/
+}
+
+.social-btn:nth-child(1) {
+	margin-left: 0;
+}
 .footer-about {
 	float: left;
+	/*margin-left: 107px;*/
 	width: 560px;
 	background-color: red; /*временно*/
+	/*box-sizing: border-box;*/
+}
+
+.footer-links a {
+ 	color: #ffffff;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.footer-links span {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 700;
+}
+
+.footer-links:nth-child(1) {
+	/*max-width: 133px;*/
 }
 
 .footer-copyright {
@@ -297,11 +490,35 @@ html, body {
 
 .breadcrumbs {
 	float: left;
-	width: 267px;
-	margin-top: 2px;
-	background-color: blue; /*временно*/
+	padding: 0;
+	margin: 0;
+	width: 826px;
+	margin-top: 17px;
+	padding: 0;
+	background-color: rgba(255, 0, 0, 0.5); /*временно*/
 }
 
+.breadcrumb-item {
+/*	position: relative;
+	margin-right: 16px;*/
+}
+
+.breadcrumbs a {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.catalog-title {
+	margin: 0;
+	margin-bottom: 25px;
+	color: #ffffff;
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+}
 
 .catalog-form-section {
 	float: left;
