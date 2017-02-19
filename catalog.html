@@ -104,18 +104,21 @@
           <form class="main-filter" action="https://echo.htmlacademy.ru" method="post">
             <div class="filter-sorting">
               <label for="sorting">Сортировка:</label>
-                <select name="sorting" id="sorting">
-                  <option value="popularity">по популярности</option>
-                  <option value="popularity">сначала недорогие</option>
-                  <option value="popularity">сначала дорогие</option>
-                  <option value="popularity">по жирности</option>
-                </select>
+              <select name="sorting" id="sorting">
+                <option value="popularity">по популярности</option>
+                <option value="popularity">сначала недорогие</option>
+                <option value="popularity">сначала дорогие</option>
+                <option value="popularity">по жирности</option>
+              </select>
             </div>
             <div class="filter-price">
-              <label>
-                Цена: 100 руб. – 500 руб.
-                <input type="range" min="1" max="100">
-              </label>
+              <label>Цена: 100 руб. – 500 руб.</label>
+              <div class="filter-price-ranger">
+                <div class="scale-bar-1"></div>
+                <div class="scale-bar-2"></div>
+                <div class="toggle-roller-1"></div>
+                <div class="toggle-roller-2"></div>
+              </div>
             </div>
             <div class="filter-fatness">
               <label>Жирность:</label>
@@ -280,7 +283,7 @@
           </div>
         </section>
         <section class="footer-copyright">
-          <p>Сделано в <a href="#">HTML Academy</a> &#169; 2017</p>
+          <p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> &#169; 2017</p>
         </section>
       </div>
     </footer>
